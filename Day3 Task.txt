@@ -1,0 +1,75 @@
+1) For the given JSON iterate over all for loops (for, for in, for of, forEach)
+
+var obj = [
+          { person: "RAHUL0", age: "2", company: "GUVI" },
+          { person: "RAHUL1", age: "4", company: "GUVI geek" },
+          { person: "RAHUL2", age: "6", company: "GUVI geek network" },
+        ];
+ForEach Loop:
+
+obj.forEach(function(objects,index){
+    console.log(objects["person"],objects["age"],objects["company"]);
+    
+});
+Output:
+	RAHUL0 2 GUVI
+        RAHUL1 4 GUVI geek
+        RAHUL2 6 GUVI geek network
+---------------------------------------------------------------
+For Loop:
+
+for(var i=0;i<obj.length;i++){
+    console.log(obj[i].person,obj[i].age,obj[i].company);
+}
+Output:
+	RAHUL0 2 GUVI
+        RAHUL1 4 GUVI geek
+        RAHUL2 6 GUVI geek network
+----------------------------------------------------------------
+For In Loop:
+
+for(var i in obj){
+    console.log(obj[i].person,obj[i].age,obj[i].company);
+}
+
+Output:
+	RAHUL0 2 GUVI
+        RAHUL1 4 GUVI geek
+        RAHUL2 6 GUVI geek network
+----------------------------------------------------------------
+For Of Loop:
+
+for(var i of obj){
+    console.log(i.person,i.age,i.company);
+}
+Output:
+	RAHUL0 2 GUVI
+        RAHUL1 4 GUVI geek
+        RAHUL2 6 GUVI geek network
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2) Create your own resume data in JSON format
+
+
+resume={
+ 	"name"                    : "RAHUL",
+
+	"Qualification"           : "B.E Electrical and Electronics Engineering",
+
+	"College"                 : "K.S.Rangasamy college of Technology, Trichengode",
+
+	"Certifications"          : ["JAVSCRIPT"],
+
+	"Education"               : {"Electrical and Electronics Engineering":{"CGPA":6.5,"Year":"2016-2020"},
+
+	"Academic Projects"       : ["Agricultural Robot Using IOT"],
+
+	"Technical Skills"        : ["HTML 5","CSS 3","JavaScript","Java","Problem Solving"],
+
+	"Soft Skills"             : ["Communication","Teamwork","Interactive","Adaptability"],
+
+	"Languages Known"         : ["Tamil","English"]
+
+	"Hobbies"                 : ["Browsing","Reading","Playing Cricket","Listening Songs"]
+}
+}
